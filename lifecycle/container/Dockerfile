@@ -104,7 +104,7 @@ RUN --mount=type=bind,target=rust-toolchain.toml,src=rust-toolchain.toml \
 RUN cat /root/.rustup/settings.toml
 
 # Stage: Download uv
-FROM ghcr.io/astral-sh/uv:0.11.5@sha256:555ac94f9a22e656fc5f2ce5dfee13b04e94d099e46bb8dd3a73ec7263f2e484 AS uv
+FROM ghcr.io/astral-sh/uv:0.11.29@sha256:eb2843a1e56fd9e30c7276ce1a52cba86e64c7b385f5e3279a0e08e02dd058fc AS uv
 # Stage: Base python image
 FROM ghcr.io/goauthentik/fips-python:3.14.5-slim-trixie-fips@sha256:4fde79ded5d9c341576aa423b6637fcce465f89b48fabbebebdc8273a5cb0a1f AS python-base
 
